@@ -87,7 +87,17 @@ body {
   transform: scale(1);
 }
 
+/* Screen */
+.screen {
+  width: 250px;
+  height: 70px;
+  margin-bottom: 3rem;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
 /* Seat Container */
+
 .seat-container .row {
   display: flex;
   justify-content: center;
