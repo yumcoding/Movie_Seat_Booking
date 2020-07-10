@@ -102,7 +102,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  perspective: 1000px;
 }
+
 .seat-container .row {
   display: flex;
   justify-content: center;
@@ -119,4 +121,23 @@ body {
 .seat:not(.occupied):hover {
   cursor: pointer;
   transform: scale(1.2);
+}
+
+/* Screen */
+.screen {
+  width: 250px;
+  height: 70px;
+  margin-bottom: 3rem;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+  transform: rotateX(-45deg);
+}
+
+.text {
+  margin-top: 3rem;
+}
+
+.text .count,
+.text .total {
+  color: var(--selected-color);
 }
