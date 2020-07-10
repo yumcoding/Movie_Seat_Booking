@@ -3,11 +3,13 @@ const seats = document.querySelectorAll(".row .seat:not(.occupied)");
 //console.log(seats);
 const count = document.querySelector(".count");
 const total = document.querySelector(".total");
-const movieSelected = document.querySelector("select");
+const movieSelector = document.querySelector("select");
 // console.log(movieSelected);
 // console.log(movieSelected.value);
 //console.log(typeof movieSelected.value);
-let ticketPrice = +movieSelected.value;
+let ticketPrice = +movieSelector.value;
+
+console.log(ticketPrice);
 
 // Update selectd seats and total price
 function updateCountAndTotal() {
@@ -30,3 +32,5 @@ seatContainer.addEventListener("click", (e) => {
     updateCountAndTotal();
   }
 });
+
+// EventListener - movie change
