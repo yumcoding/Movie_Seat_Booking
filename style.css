@@ -82,6 +82,11 @@ body {
   color: #777;
 }
 
+.seat-showcase .seat:not(.occupied):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
 /* Seat Container */
 .seat-container .row {
   display: flex;
