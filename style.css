@@ -26,6 +26,7 @@ body {
 
 /* Seat */
 .seat {
+  cursor: pointer;
   width: 17px;
   height: 15px;
   background-color: var(--na-color);
