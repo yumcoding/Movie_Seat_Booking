@@ -26,6 +26,12 @@ function updateCountAndTotal() {
   total.textContent = newCount * ticketPrice;
 }
 
+//save movie data to local storage
+function setMovieData(movieIndex, moviePrice) {
+  localStorage.setItem("selectedMovie", movieIndex);
+  localStorage.setItem("selectedPrice", moviePrice);
+}
+
 // EventLister - seat select
 seatContainer.addEventListener("click", (e) => {
   //console.log(e);
@@ -44,5 +50,6 @@ seatContainer.addEventListener("click", (e) => {
 movieSelector.addEventListener("change", (e) => {
   //   console.log(e.target.value);
   ticketPrice = +e.target.value;
+  setMovieData(e.target.selectedIndex, e.target.value);
   updateCountAndTotal();
 });
