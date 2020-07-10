@@ -4,7 +4,7 @@
   --dark-bg: #242333;
   --middle-bg: #201f2e;
   --na-color: #444451;
-  --selected-color: ##6feaf6;
+  --selected-color: #6feaf6;
   --occupied-color: #ffffff;
 }
 
@@ -61,6 +61,27 @@ body {
   -webkit-appearance: none;
 }
 
+/* Seat Showcase */
+
+.seat-showcase {
+  list-style: none;
+  background-color: var(--middle-bg);
+  border-radius: 7px;
+  padding: 0.3rem 0.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.seat-showcase li {
+  display: flex;
+  align-items: center;
+}
+
+.seat-showcase li small {
+  margin-left: 0.3rem;
+  color: #777;
+}
 /* Seat Container */
 .seat-container .row {
   display: flex;
