@@ -9,8 +9,6 @@ const movieSelector = document.querySelector("select");
 //console.log(typeof movieSelected.value);
 let ticketPrice = +movieSelector.value;
 
-console.log(ticketPrice);
-
 // Update selectd seats and total price
 function updateCountAndTotal() {
   const selectedSeats = document.querySelectorAll(".row .seat.selected");
@@ -34,3 +32,8 @@ seatContainer.addEventListener("click", (e) => {
 });
 
 // EventListener - movie change
+movieSelector.addEventListener("change", (e) => {
+  //   console.log(e.target.value);
+  ticketPrice = +e.target.value;
+  updateCountAndTotal();
+});
