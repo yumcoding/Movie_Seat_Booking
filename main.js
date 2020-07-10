@@ -1,0 +1,10 @@
+const seatContainer = document.querySelector(".seat-container");
+const seats = document.querySelectorAll(".row .seat:not(.occupied)");
+//console.log(seats);
+const count = document.querySelector(".count");
+const total = document.querySelector(".total");
+const movieSelected = document.querySelector("select");
+// console.log(movieSelected);
+// console.log(movieSelected.value);
+//console.log(typeof movieSelected.value);
+let ticketPrice = +movieSelected.value;
