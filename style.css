@@ -24,6 +24,24 @@ body {
   align-items: center;
 }
 
+/* Seat */
+.seat {
+  width: 17px;
+  height: 15px;
+  background-color: var(--na-color);
+  margin: 0.5rem;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.seat.selected {
+  background-color: var(--selected-color);
+}
+
+.seat.occupied {
+  background-color: var(--occupied-color);
+}
+
 /* Movie Selector */
 
 .movie-selector {
