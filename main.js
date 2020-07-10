@@ -4,10 +4,9 @@ const count = document.querySelector(".count");
 const total = document.querySelector(".total");
 const movieSelector = document.querySelector("select");
 
-let ticketPrice = +movieSelector.value;
-
 populateUI();
 
+let ticketPrice = +movieSelector.value;
 // Update selectd seats and total price
 function updateCountAndTotal() {
   const selectedSeats = document.querySelectorAll(".row .seat.selected");
