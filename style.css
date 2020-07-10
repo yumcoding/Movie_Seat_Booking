@@ -97,7 +97,12 @@ body {
 }
 
 /* Seat Container */
-
+.seat-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .seat-container .row {
   display: flex;
   justify-content: center;
