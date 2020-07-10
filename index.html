@@ -7,5 +7,78 @@
     <script defer src="main.js"></script>
     <title>CineBox | Seat Booking</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <section class="movie-selector">
+        <label>Pick a Movie: </label>
+        <select id="movie">
+          <option value="12">Hidden Figures($12)</option>
+          <option value="10">Parasite($10)</option>
+          <option value="9">Captain Marvel($9)</option>
+          <option value="8">The Lord of The Rings($8)</option>
+        </select>
+      </section>
+      <ul class="seat-showcase">
+        <li>
+          <div class="seat"></div>
+          <small>N/A</small>
+        </li>
+        <li>
+          <div class="seat selected"></div>
+          <small>Selected</small>
+        </li>
+        <li>
+          <div class="seat occupied"></div>
+          <small>Occupied</small>
+        </li>
+      </ul>
+      <div class="seat-container">
+        <div class="screen"></div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+        </div>
+      </div>
+      <p class="text">
+        You have selected <span class="count">0</span> Seats for a price of
+        $<span class="totlal">0</span>
+      </p>
+    </div>
+  </body>
 </html>
